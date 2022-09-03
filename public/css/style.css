@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+}
+body{
+    margin:0;
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 80px;
+    background-color: rgb(255, 237, 212);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#image{
+    border-radius: 30px;
+    background-color: aqua;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+            
+            
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: rgb(17, 170, 170);
+    transition: 0.2s;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(17, 170, 170);
+    bottom: -4px;
+    left:20px;
+    position: absolute;
+
+}
+#log{
+    display: flex;
+}
+#log img{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+#hero{
+    background-image: url("/images/admin.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top 25% left 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(252, 255, 239);
+
+}
+#hero h4{
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    position:absolute;
+    left: 45%;
+    bottom: 80%;
+    
+}
+#hero h1{
+    color: rgb(17, 170, 170);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+#hero h2{
+    color: brown;
+}
+#hero button{
+    margin-top: 8px;
+    background-image: url(./img/button-png.jpg);
+    background-color:transparent;
+    color: rgb(178, 188, 188);
+    border: 0;
+    background-position: top 20% left 60%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+
+}
+#hero button:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.7);
+
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    
+    border: 1px solid rgb(178, 188, 188);
+    margin: 15px 0;
+}
+#feature .box:hover{
+    box-shadow: 10px 10px 59px rgba(218, 133, 133, 0.4);
+
+}
+#feature .box h4{
+     display: inline-block;
+     padding: 9px 14px 6px 14px;
+     line-height: 1;
+     border-radius: 4px;
+     color: rgb(17, 170, 170);
+     background-color:#fddde4;
+
+}
+
+#feature .box:nth-child(1) h4{
+    background-color: rgb(201, 255, 200);
+}
+#feature .box:nth-child(2) h4{
+    background-color: rgb(200, 240, 255);
+}
+#feature .box:nth-child(3) h4{
+    background-color: rgb(200, 238, 255);
+}
+#feature .box:nth-child(4) h4{
+    background-color: rgb(215, 200, 255);
+}
+#feature .box:nth-child(5) h4{
+    background-color: rgb(247, 200, 255);
+}
+#feature .box:nth-child(6) h4{
+    background-color: rgb(255, 238, 200);
+}
+#feature .box img{
+
+}
+#product{
+    text-align: center;
+}
+#product .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+
+}
+
+#product .pro{
+    margin: 20px 0;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(65, 62, 55);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(75, 83, 82, 0.399);
+    position: relative;
+}
+#product .pro:hover{
+    box-shadow: 4px 4px 30px rgba(76, 248, 228, 0.652) ;
+}
+    
+#product .pro img{
+    width: 100%;
+    border-radius: 15px;
+}
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product .pro .des span{
+    color: rgb(149, 182, 171);
+    font-size: 14px;
+}
+#product .pro .des h5{
+    padding-top: 10px;
+    color: black;
+    font-size: 14px;
+}
+#product .pro .des i{
+    font-size: 12px;
+    color: rgb(245, 249, 9);
+}
+#product .pro .des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(17, 170, 170);
+    
+}
+#product .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(45, 180, 168);
+    border-radius: 50px;
+    background-color: rgba(229, 220, 165, 0.748);
+    font-weight: 700;
+    border: 1px solid rgba(31, 126, 107, 0.378);
+    box-shadow: 1px 1px 6px rgba(81, 106, 107, 0.596);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#appointment{
+
+}
+table{
+    width: 100%;
+    height: 40vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table caption{
+    color: rgb(0, 187, 255);
+    font-size: 30px;
+}
+
+th, td{
+    border: 1px solid #dddddd;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+#appointment-body-section{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(214, 236, 255);
+    width: 100%;
+    
+}
+.form-div{
+    width: 40%;
+}
+#appointment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    
+}
+#appointment-form button{
+    font-size: 20px;
+    background-color: beige;
+    color: rgb(17, 171, 86);
+    padding: 3px 20px;
+    border: 1px solid rgba(93, 62, 62, 0.658);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px cadetblue;
+    cursor: pointer;
+    margin:20px;
+    
+}
+#appointment-form button:hover{
+    background-color: beige;
+    color: rgb(109, 255, 42);
+    box-shadow: 1px 1px 2px rgba(26, 48, 49, 0.8);
+    font-size: 19.7px;
+    
+    
+}
+#appointment-form label{
+    margin: 20px 4px 2px;
+}
+#appointment-form input{
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    height: 20px;
+    width: 100%;
+    
+}
+#appointment-form input:hover{
+    border:1px solid rgb(93, 244, 123) ;
+}
+
+
+
+
+.form{
+    
+    
+}
+.form input{
+}
+#form-div{
+    margin-left: 10px;
+}
+#admin-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 255, 255);
+    height:88vh;
+}
+#admin-div{
+    margin:10%;
+}
+#admin-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#admin-form input{
+    margin-bottom: 30px;
+    height: 25px;
+}
+#update-section{
+    text-align: center;
+}
+#appointment-control-table,th,td{
+    border: 1px solid cadetblue;
+    border-collapse: collapse;
+    background-color: rgba(255, 137, 137, 0.534);
+    
+}
+.form-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 255, 255);
+    height: 100%
+    
+}
+.form-div{
+    
+}
+.form-form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.form-form input{
+    margin-bottom:15px;
+}
+#login-section{
+    margin: 40px auto;
+    background-color: azure;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>header}}
+    <section id="admin-section" >
+        <div id="admin-div" >
+            <form id="admin-form" action="/patient" method="post" >
+              
+                <h1>{{error}}</h1>
+
+                <label for="text">Patient Name</label>
+                <input name="patientName" type="text" >
+
+                <label for="text">Patient Id:</label>
+                <input name="patientId" type="text" >
+
+                <label for="password">Enter Password:</label>
+                <input name="password" type="password">
+                
+                <button type="submit">submit</button>
+
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

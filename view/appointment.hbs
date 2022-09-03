@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>header}}
+    <section id="appointment-body-section">
+        
+        <div class="form-div">
+            <h1>Book Appointment</h1>
+        
+            <h3>fill this form</h3>
+            <form class="form" id="appointment-form" action="/appointment" method="post">
+                
+                    <label >Name:</label>
+                    <input name="name" type="text" value="">
+                
+                    <label >patient Id No.:</label>
+                    <input name="patientIdNo" type="number" >
+            
+                    <label >Password:</label>
+                    <input name="password" type="password" >
+
+                    <label >problem:</label>
+                    <input name="problem" type="text" >
+    
+                    <label >Doctor id:</label>
+                    <input name="doctorId" type="text" >
+
+                    <label >Doctor name:</label>
+                    <input name="doctorName" type="text" >
+                
+                
+                
+                
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>

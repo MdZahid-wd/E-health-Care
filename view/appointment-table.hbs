@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>header}}
+    <section id="appointment-table">
+        <table>
+            <caption>Appointment Table</caption>
+                <tr>
+                    <th>Appointment Id</th>
+                    <th>Problem</th>
+                    <th>Parient Id</th>
+                    <th>Doctor Name</th>
+                    <th>Doctor Id</th>
+                    <th>Doctor Type</th>
+                    <th>Qualification</th>
+                    <th>Doctor Fees</th>
+                    <th>Payment Status</th>
+                    <th>Appointment Status</th> 
+                </tr>
+                {{#each data}}
+                <tr>
+                    
+                    <td>{{this.name}}</td>
+                    <td>{{this.problem}}</td>
+                    <td>{{this.ParientIdNO}}</td>
+                    <td>{{this.doctorName}}</td>
+                    <td>{{this.doctorId}}</td>
+                    <td>Bone</td>
+                    <td>BHMS</td>
+                    <td>500</td>
+                    <td>payed</td>
+                    <td>Comleted</td>
+
+                </tr>
+                {{/each}}
+                
+        </table>
+        
+    </section>
+    
+</body>
+</html>
